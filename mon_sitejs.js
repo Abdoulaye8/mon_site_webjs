@@ -1,24 +1,32 @@
-async function chargerRecette() {
-    const reponse = await fetch("https://api.openbrewerydb.org/v1/breweries");
-    const recette = await reponse.json();
-    console.log(recette);
+
+const container = document.getElementById('jokes');
+
+const buttonReload = document.getElementById('reloadJokes');
+buttonReload.addEventListener("click", function () {
+    container.innerHTML = '';
+
+
+    getJokes(5);
+});
+
+function displayJoke(question, answer, index) {
+    const child = document.createElement('card');
+    container.appendChild(child);
+
+    child.innerHTML = `${index}: <p>${question}</p><p>${answer}</p>`;
 }
-chargerRecette();
-
-function afficheBrewerises {
-    //Création d'un élément HTML pour afficher les infos
-    const hero = document.createElement('div');
-    //Selection d'un élément du DOM par l'ID
-    const card = document.getElementById("breweries")
-
-    hero.innerHTML = `
-        <h2>${brewery.name}</h2>
-        <p>Type: ${brewery.index}</p>
-        <p>Size: ${brewery.size}</p>
-        
-        `;
-
-
-
-    card.appendChild(brewery)
+function getJoke(index) {
+    fetch("https://v2.jokeapi.dev/joke/Any?lang=fr")
+        .then(res => res.json())
+        .then(function (json) {
+            displayJoke(json.setup, json.delivery, index);
+        });
 }
+
+function getJokes(jokeNum) {
+    for (let i = 0; i < jokeNum; i++) {
+        getJoke(i + 1);
+    }
+}
+
+getJokes(5); 

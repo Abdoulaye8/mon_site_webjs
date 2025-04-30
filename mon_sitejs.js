@@ -30,3 +30,8 @@ function getJokes(jokeNum) {
 }
 
 getJokes(5); 
+
+
+function maFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }

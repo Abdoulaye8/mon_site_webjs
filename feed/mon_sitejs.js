@@ -35,3 +35,8 @@ getJokes(5);
 function maFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
   }
+ document.getElementById('jokesformulaire').addEventListener('
+document.    
+)
+
+ 

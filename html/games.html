@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jeux - Mon Site JS</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Jeux interactifs</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="gallery.html">Galerie</a></li>
+          <li><a href="games.html">Jeux</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="game-number" class="game-section">
+        <h2>Jeu : Devine le Nombre !</h2>
+        <p>Devine un nombre entre 1 et 100 :</p>
+        <input type="number" id="guessInput" min="1" max="100" />
+        <button id="checkGuess">Valider</button>
+        <p id="resultMessage"></p>
+        <p>Essais restants : <span id="attemptsLeft">10</span></p>
+      </section>
+    </main>
+    <script src="js/games.js"></script>
+  </body>
+</html>

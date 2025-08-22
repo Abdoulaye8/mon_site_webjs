@@ -1,11 +1,18 @@
 # mon_site_webjs
 
-dans ce dossier, il question de réaliser un site :
+# Pages du site
 
-le premier jour:
+- `index.html` : page d'accueil avec un feed dynamique (API + formulaire)
+- `gallery.html` : galerie avec ajout d'images et pub animée
+- `games.html` : intégration de jeux en JavaScript (à compléter)
 
-1. créer un repository ou je vais mettre l'ensemble de mon projet.
-2. définir ma méthodologie : issues
-3. faire un genre d'organigramme.
-4. faire un wireframe de mon site .
-5. suivre le reste
+## Objectifs techniques
+
+- Maîtriser HTML, CSS, JavaScript (Vanilla)
+- Utilisation d’API, manipulation DOM, événements
+- Développement en mode Agile (issues, milestones, kanban)
+- Git + Netlify
+
+## Démarrage local ensuite pusher dans:
+
+https://github.com/Abdoulaye8/mon_site_webjs

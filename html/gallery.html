@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galerie - Mon Site JS</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Galerie</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="gallery.html">Galerie</a></li>
+          <li><a href="games.html">Jeux</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h2>Galerie d'images</h2>
+        <form id="imageForm">
+          <input
+            type="url"
+            id="imageUrl"
+            placeholder="URL de l'image"
+            required
+          />
+          <input type="text" id="imageDesc" placeholder="Description" />
+          <button type="submit">Ajouter</button>
+        </form>
+        <div id="gallery"></div>
+      </section>
+      <section>
+        <h2>Publicité</h2>
+        <div id="pub">
+          <img id="pubImage" src="" alt="Pub défilante" />
+        </div>
+      </section>
+    </main>
+    <script src="js/gallery.js"></script>
+  </body>
+</html>

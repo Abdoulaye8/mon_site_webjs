@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accueil - Mon Site JS</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Mon Site JavaScript</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="gallery.html">Galerie</a></li>
+          <li><a href="games.html">Jeux</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="feed">
+        <h2>Fil d’actualités</h2>
+        <button id="refreshBtn">Actualiser les posts</button>
+        <div id="posts"></div>
+      </section>
+      <section id="form-section">
+        <h3>Ajouter un post</h3>
+        <form id="postForm">
+          <input
+            type="text"
+            id="postContent"
+            placeholder="Votre message..."
+            required
+          />
+          <button type="submit">Publier</button>
+        </form>
+      </section>
+    </main>
+    <script src="js/main.js"></script>
+  </body>
+</html>
